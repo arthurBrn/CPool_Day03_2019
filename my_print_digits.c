@@ -9,13 +9,12 @@ void my_putchar(char c);
 
 int my_print_digits(void)
 {
-    int digit;
+    int digit = 48;
 
-    digit = 48;
-
-    while(digit < 58)
-    {
+    while (digit < 58) {
         my_putchar(digit);
         digit = digit + 1;
     }
+
+    return (0);
 }

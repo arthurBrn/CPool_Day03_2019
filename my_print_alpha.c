@@ -9,14 +9,11 @@ void my_putchar(char c);
 
 int my_print_alpha(void)
 {
-    int cpt;
+    int cpt = 96;
 
-    cpt = 96;
-
-    while(cpt != 122)
-    {
+    while (cpt != 122) {
         my_putchar(cpt = cpt + 1);
     }
 
-    return(0);
+    return (0);
 }
