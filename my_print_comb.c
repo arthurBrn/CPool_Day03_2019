@@ -17,9 +17,9 @@ void display(int a)
 
 int my_print_comb(void)
 {
-    char a = 0;
-    char b = 1;
-    char c = 2;
+    int a = 0;
+    int b = 1;
+    int c = 2;
 
     while (a != 8) {
         my_putchar(a + '0');
