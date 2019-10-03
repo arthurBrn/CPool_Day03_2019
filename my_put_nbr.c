@@ -7,11 +7,30 @@
 
 void my_putchar(char c);
 
+void resexception()
+{
+    my_putchar('-');
+    my_putchar(2 + '0');
+    my_putchar(1 + '0');
+    my_putchar(4 + '0');
+    my_putchar(7 + '0');
+    my_putchar(4 + '0');
+    my_putchar(8 + '0');
+    my_putchar(3 + '0');
+    my_putchar(6 + '0');
+    my_putchar(4 + '0');
+    my_putchar(8 + '0');    
+}
+
 int my_put_nbr(int nb)
 {
     int reste = 0;
 
-    if (nb < 0) {
+    if (nb == -2147483648) {
+        resexception();
+        return (0);
+    }    
+    if (nb < 0 && nb != -2147483648) {
         nb = nb * (-1);
         my_putchar('-');
     }
